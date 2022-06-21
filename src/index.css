@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #12131f;
+  color: white !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.text-color{
+  color: white !important;
+}
+.background {
+  background-color: #12131f;
+  color: #92F6FF !important;
+}
+
+.secondary-background{
+background-color: #03e9f4;
+color: rgb(0, 0, 0);
+}
+
+.glow:hover {
+  transition-duration: 0.25s;
+  cursor: pointer;
+ color: #17171c;
+  text-shadow: 0 0 5px #03e9f4,
+  0 0 25px #03e9f4,
+  0 0 50px #03e9f4;
+}
+
+.img-glow:hover{
+  transition-duration: 0.25s;
+  box-shadow: 0px 0px 5px #03e9f4,
+  0px 0px 25px #03e9f4,
+  0px 0px 50px #03e9f4;
+}
+
+h2:focus{
+  box-shadow: 0px 0px 5px #03e9f4,
+  0px 0px 25px #03e9f4,
+  0px 0px 50px #03e9f4;
+}
+
+.depth:hover{
+  transition-duration: 0.2s;
+  text-decoration: underline;
+  color: white;
+  cursor: pointer;
+}
+
+.fixed {
+  position: fixed;
+  top: 45vh;
+  left: 0.5rem;
+}
+
+input[type="button"] {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #03e9f4;
+  margin: 5px;
+  padding: 5px;
+  font: inherit;
+  color: currentColor;
+  width: 1em;
+  height: 1em;
+  border-radius: 0%;
+  transform: rotatez(45deg);
+}
+
+.form-control + .form-control {
+  margin-top: 1em;
+}
+
+input[type="button"] {
+  /* ...existing styles */
+
+  display: grid;
+  place-content: center;
+}
+
+input[type="button"]::before {
+  content: "";
+  width: 0.25em;
+  height: 0.25em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+}
+
+input[type="button"]:checked::before {
+  transform: scale(1);
+}
+
+.button{
+background-color: #12131f !important;
+color: #03e9f4;
+}
+
+a:hover {
+color: #03e9f4 !important;
+} 
+
+.button-hover:hover {
+color: #03e9f4 !important;
+background-color: #12131f;
+box-shadow: 0 0 5px #03e9f4,
+0 0 25px #03e9f4,
+0 0 50px #03e9f4;
+transform: rotateZ(5deg) scale(0.8);
+transition: all 0.2s ease-in-out;
+
+}
+
+a:active , a:link {
+  color: #03e9f4;
+}
+
+.text-justify{
+text-align: justify;
+}
+
+.cursor:hover{
+cursor: grabbing;
+}
+
+input:focus {
+background-color: #03e9f4;
+}
