@@ -2,7 +2,11 @@
 function Footer() {
     return (
     <div>
-        Footer
+        <footer className="text-center text-white bg-dark-theme fixed-bottom" style={{backgroundcolor: "#21081a"}}>
+  <div className="container"></div>
+  <div className="text-center p-3" style={{backgroundcolor: "rgba(0, 0, 0, 0.2);"}}>
+    © 2020 Copyright: Bhumit Patel </div>
+</footer>
     </div>
     );
 }

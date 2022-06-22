@@ -7,6 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #12131f;
   color: white !important;
+  cursor: pointer;
 }
 
 code {
@@ -116,7 +117,7 @@ background-color: #12131f;
 box-shadow: 0 0 5px #03e9f4,
 0 0 25px #03e9f4,
 0 0 50px #03e9f4;
-transform: rotateZ(5deg) scale(0.8);
+transform: scale(0.9);
 transition: all 0.2s ease-in-out;
 
 }
@@ -135,4 +136,8 @@ cursor: grabbing;
 
 input:focus {
 background-color: #03e9f4;
+}
+
+.bg-dark-theme{
+  background-color: #08080e;
 }

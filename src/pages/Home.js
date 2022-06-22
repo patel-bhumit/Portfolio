@@ -3,7 +3,6 @@ import avatar from "./../images/DSC_6764.jpg"
 
 function Home() {
     return (
-        <React.Fragment>
           <div id="Home" className="container-fluid p-4">
           <main className="text-center container-fluid d-inline-flex justify-content-around">
             <div style={{ marginTop: "5rem"}}>
@@ -13,8 +12,6 @@ function Home() {
               <h2 className="fw-bold"> I'M <span className="glow">BHUMIT PATEL</span></h2>
               <h3> Web Developer | Game Developer | Web Designer</h3>
               <br/>
-              <a href="#Contact" style={{textdecoration: "none", color: "#12131f"}}><button type="button" className="btn button button-hover">Hire Me</button></a>
-              <br/>
               <div className="spinner-grow spinner-grow-sm m-4" role="status">
                 <span className="visually-hidden">Loading...</span>
               </div>
@@ -23,16 +20,15 @@ function Home() {
           <br /><hr className="mx-5 mt-5" />
           <div>
             <ul className="nav justify-content-around m-4">
-            <li className="nav-item btn button-hover text-light m-2">Github</li>
-            <li className="nav-item btn button-hover text-light m-2">Instragram</li>
-            <li className="nav-item btn button-hover text-light m-2">LinkedIn</li>
-            <li className="nav-item btn button-hover text-light m-2">Twitter</li>
-            <li className="nav-item btn button-hover text-light m-2">StackOverflow</li>
-            <li className="nav-item btn button-hover text-light m-2">Facebook</li>
+            <li><a href="https://github.com/patel-bhumit" className="nav-item btn button-hover text-light m-2">Github</a></li>
+            <li><a href="https://instagram.com/bhumit._.patel._.667?r=nametag" className="nav-item btn button-hover text-light m-2">Instragram</a></li>
+            <li><a href="https://www.linkedin.com/in/bhumit-patel-71a818215" className="nav-item btn button-hover text-light m-2">LinkedIn</a></li>
+            <li><a href="https://twitter.com/BhumitP59901187" className="nav-item btn button-hover text-light m-2">Twitter</a></li>
+            <li><a href="https://stackoverflow.com/users/19044008/bhumit-patel" className="nav-item btn button-hover text-light m-2">StackOverflow</a></li>
+            <li><a href="https://www.facebook.com/bhumit.patel.667" className="nav-item btn button-hover text-light m-2">Facebook</a></li>
             </ul>
           </div>
         </div>
-        </React.Fragment >
     );
 }
 
