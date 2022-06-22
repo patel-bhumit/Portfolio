@@ -5,7 +5,7 @@ function Header() {
     return (
        <div>
         <Navbar expand="lg">
-  <div className="container-fluid bg-dark-theme fixed-top">
+  <div className="container-fluid bg-dark-theme fixed-top navbar-dark">
     <Navbar className="fw-bold h2"><div>Portfolio</div></Navbar>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
