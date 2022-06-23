@@ -1,9 +1,9 @@
-import { Container, Navbar, Nav } from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom"
 
 function Header() {
     return (
-       <div>
+       <div className="md-5">
         <Navbar expand="lg">
   <div className="container-fluid bg-dark-theme fixed-top navbar-dark">
     <Navbar className="fw-bold h2"><div>Portfolio</div></Navbar>

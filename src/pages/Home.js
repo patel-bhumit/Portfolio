@@ -1,9 +1,11 @@
 import React from "react";
 import avatar from "./../images/DSC_6764.jpg"
+import { Link } from "react-router-dom";
+import Button from "react-bootstrap/esm/Button";
 
 function Home() {
     return (
-          <div id="Home" className="container-fluid p-4">
+          <div id="Home" className="container-fluid p-2 min-h-screen">
           <main className="text-center container-fluid d-inline-flex justify-content-around">
             <div style={{ marginTop: "5rem"}}>
               <img src={avatar} className="img-fluid img-glow border border-dark rounded-circle" style={{ width: "150px", height: "150px" }}/>
@@ -28,6 +30,8 @@ function Home() {
             <li><a href="https://www.facebook.com/bhumit.patel.667" className="nav-item btn button-hover text-light m-2">Facebook</a></li>
             </ul>
           </div>
+          <div className="d-flex justify-content-center m-4">
+            <Button as={Link}  to={'About'} className="btn button-light button-hover" >Learn More</Button></div>
         </div>
     );
 }

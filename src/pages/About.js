@@ -1,8 +1,10 @@
+import Button from "react-bootstrap/esm/Button";
+import { Link } from "react-router-dom";
 import React from "react";
 
 function About() {
     return (
-                <div id="About" className="container-fluid mt-5 p-4">
+                <div id="About" className="container-fluid mt-5 p-4 min-h-screen">
         <h2 className="h1 text-center"><span className="glow">About</span></h2>
       <div className="container-fluid p-4">
         <br /><br />
@@ -54,8 +56,11 @@ function About() {
           <dt className="col-sm-3 depth">Projects</dt>
           <dd className="col-sm-4 depth">Coming Soon...</dd>
         </dl>
-      </div>
-    </div>
+          </div>
+          <div className="d-flex justify-content-center">
+            <Button as={Link}  to={'/Skills'} className="btn button-light button-hover" >Skills</Button>
+            </div>       
+          </div>
     );
 }
 

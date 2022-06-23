@@ -2,8 +2,8 @@
 function Footer() {
     return (
     <div>
-        <footer className="text-center text-white bg-dark-theme fixed-bottom" style={{backgroundcolor: "#21081a"}}>
-  <div className="container"></div>
+        <footer className="text-center text-white bg-dark-theme" style={{backgroundcolor: "#21081a"}}>
+  <div className="container-fluid"></div>
   <div className="text-center p-3" style={{backgroundcolor: "rgba(0, 0, 0, 0.2);"}}>
     © 2020 Copyright: Bhumit Patel </div>
 </footer>
